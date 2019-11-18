@@ -1,4 +1,4 @@
-package com.yaml.bean;
+package com.springboot.bean;
 
 public class Dog {
     private String name;

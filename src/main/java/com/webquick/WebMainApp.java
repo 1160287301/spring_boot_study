@@ -1,12 +1,11 @@
-package com.yaml;
+package com.webquick;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YamlMainApp {
+public class WebMainApp {
     public static void main(String[] args) {
-        // Spring应用启动起来
-        SpringApplication.run(YamlMainApp.class, args);
+        SpringApplication.run(WebMainApp.class, args);
     }
 }
