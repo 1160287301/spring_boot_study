@@ -12,9 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * SpringBoot单元测试;
- *
+ * <p>
  * 可以在测试期间很方便的类似编码一样进行自动注入等容器的功能
- *
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -25,6 +24,7 @@ public class MainAppTests {
 
     @Autowired
     ApplicationContext ioc;
+
 
     @Test
     public void testHelloService() {
