@@ -74,6 +74,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--这里注意这里必须是 false-->
+                    <fork>false</fork>
+                    <!--8112 是自己 springboot 监听的端口-->
+                    <jvmArguments>
+                        -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8112
+                    </jvmArguments>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

@@ -2,11 +2,13 @@ package com.hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * @SpringBootApplication 来标注一个主程序类，说明这是一个Spring Boot应用
  */
 @SpringBootApplication
+@ServletComponentScan("com.hello")
 public class HelloWorldMainApp {
     public static void main(String[] args) {
         // Spring应用启动起来
