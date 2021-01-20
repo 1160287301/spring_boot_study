@@ -2,7 +2,6 @@ package com.hello.filter;
 
 import javax.servlet.FilterConfig;
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 /**
@@ -13,7 +12,7 @@ import java.io.IOException;
  * 这里需要解释一下，@WebFilter这个注解并没有指定执行顺序的属性，其执行顺序依赖于Filter的名称，是根据Filter类名（注意不是配置的filter的名字）的字母顺序倒序排列，
  * 并且@WebFilter指定的过滤器优先级都高于FilterRegistrationBean配置的过滤器。有兴趣的朋友可以自己实验一下。
  */
-@WebFilter(urlPatterns = "/*", filterName = "logFilter2")
+//@WebFilter(urlPatterns = "/*", filterName = "logFilter2")
 public class LogCostFilter2 implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
